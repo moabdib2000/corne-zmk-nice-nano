@@ -16,25 +16,25 @@
 // | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RET  |
-//                    | GUI | LWR | CTRL |   | SPAC | RSE  | ALT |
+//                    | GUI | LWR | GUI |   | SPAC | RSE  | ALT |
                         bindings = <
    &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &lt 3 TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET 
-       &kp LGUI &lt 2 SPACE &mt LCTRL RET    &lt 1 SPACE  &mo 2 &mt RALT DEL 
+       &kp LCTRL &lt 2 SPACE &mt LGUI RET    &lt 1 BKSP  &mo 2 &mt RALT DEL 
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // | ESC  |     |  (  |  )  |  %  |  "  |   |  ,  |  7  |  8  |  9  |  /  | BKSP |
 // |      |     |  ;  |  :  |  &  |  '  |   |  .  |  4  |  5  |  6  |  *  |  =   |
-// | LCAPS|  <  |  >  |  _  |  $  |  @  |   |  0  |  1  |  2  |  3  |  -  |  +   |
-//                    | GUI |     |CTRL |   | ENT |     | ALT |
+// | LCAPS|  <  |  >  |  _  |  $  |  @  |   |     |  1  |  2  |  3  |  -  |  +   |
+//                    | GUI |     |CTRL |   | ENT |  0   | ALT |
                         bindings = <
-   &kp RA(GRAVE) &trans   &kp LS(N8)      &kp LS(N9)   &kp LS(N5)   &kp AT        &kp COMMA   &kp N7     &kp N8  &kp N9  &kp KP_DIVIDE     &kp BSPC
-   &kp CLCK      &trans   &kp LS(COMMA)   &kp LS(DOT)  &kp LS(N6)   &kp MINUS 	  &kp DOT     &kp N4     &kp N5  &kp N6  &kp KP_MULTIPLY   &kp RPAR
-   &kp LSHFT     &kp NON_US_BSLH  &kp LS(NON_US_BSLH)   &kp LS(FSLH) &kp DLLR     &kp RA(N2)  &kp N0     &kp N1  &kp N2  &kp N3  &trans   &kp RBKT
-                          	       &trans         &trans       &trans         &trans      &kp COMMA  &mt RALT DEL 
+   &kp RA(GRAVE) &trans              &kp LS(N8)           &kp LS(N9)   &kp LS(N5)   &kp AT              &kp COMMA   &kp N7   &kp N8  &kp N9  &kp KP_DIVIDE     &kp BSPC
+   &kp CLCK      &trans              &kp LS(COMMA)        &kp LS(DOT)  &kp LS(N6)   &kp MINUS 	        &kp DOT     &kp N4   &kp N5  &kp N6  &kp KP_MULTIPLY   &kp RPAR
+   &kp LSHFT     &kp NON_US_BSLH     &kp LS(NON_US_BSLH)  &kp LS(FSLH) &kp DLLR     &kp RA(N2)          &kp N0      &kp N1   &kp N2  &kp N3  &trans   &kp RBKT
+                          	       &trans         &trans       &trans         &kp N0      &kp COMMA  &mt RALT DEL 
                         >;
                 };
                 raise_layer {
