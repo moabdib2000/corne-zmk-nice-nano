@@ -12,7 +12,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        CAPA0 {
             // -----------------------------------------------------------------------------------------
             // | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -20,14 +20,14 @@
             //                    | GUI | LWR | GUI |   | SPAC | RSE  | ALT |
 
             bindings = <
-   &kp ESC   &kp Q   &kp W               &kp E        &kp R           &kp T                    &kp Y               &kp U      &kp I    &kp O     &kp P       &kp BSPC
- &lt 3 TAB   &kp A   &kp S               &kp D        &kp F           &kp G                    &kp H               &kp J      &kp K    &kp L  &kp SEMI        &kp SQT
- &kp LSHFT   &kp Z   &kp X               &kp C        &kp V           &kp B                    &kp N               &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT RET
-                            &lt 3 LEFT_CONTROL  &lt 1 SPACE  &mt LGUI ENTER          &lt 1 BACKSPACE  &lt 2 SINGLE_QUOTE  &lt 4 DEL
+   &kp ESC   &kp Q   &kp W               &kp E        &kp R           &kp T                       &kp Y            &kp U      &kp I    &kp O     &kp P       &kp BSPC
+   &kp TAB   &kp A   &kp S               &kp D        &kp F           &kp G                       &kp H            &kp J      &kp K    &kp L  &kp SEMI        &kp SQT
+ &kp LSHFT   &kp Z   &kp X               &kp C        &kp V           &kp B                       &kp N            &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT RET
+                            &lt 3 LEFT_CONTROL  &lt 1 SPACE  &mt LGUI ENTER          &lt 1 SINGLE_QUOTE  &lt 3 BACKSPACE  &lt 2 DEL
             >;
         };
 
-        symbol_and_numbers {
+        CAPA1 {
             // -----------------------------------------------------------------------------------------
             // | ESC  |     |  (  |  )  |  %  |  "  |   |  ,  |  7  |  8  |  9  |  /  | BKSP |
             // |      |     |  ;  |  :  |  &  |  '  |   |  .  |  4  |  5  |  6  |  *  |  =   |
@@ -42,7 +42,7 @@
             >;
         };
 
-        function_and_nav {
+        CAPA2 {
             // -----------------------------------------------------------------------------------------
             // | F1  | F2 |  F3 | F4  | F5  | F6  |     | [  |  ]  |  {  |  }  | PSCR| BKSP |
             // | F7  | F8 |  F9 | F10 | F11 | F12 |     | ¿  |  ?  |  #  |  &  | UP  |  ç   |
@@ -58,21 +58,12 @@
             >;
         };
 
-        MEDIA_LAYER {
+        CAPA3 {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans          &trans           &trans      &trans
  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans          &trans  &kp K_VOLUME_UP      &trans
  &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &kp K_PREVIOUS     &kp K_VOL_DN  &kp K_NEXT
                          &trans  &trans  &trans          &kp K_PLAY_PAUSE  &trans  &trans
-            >;
-        };
-
-        copy_paste_etc {
-            bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans          &trans  &trans  &trans
             >;
         };
     };
