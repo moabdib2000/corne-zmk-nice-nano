@@ -60,10 +60,10 @@
 
         CAPA3 {
             bindings = <
- &trans  &trans  &trans  &trans  &kp LS(N8)  &kp LS(N9)          &trans  &kp HOME  &kp UP_ARROW      &kp PG_UP  &trans  &trans
- &trans  &trans  &trans  &trans      &trans      &trans          &trans  &kp LEFT      &kp DOWN      &kp RIGHT  &trans  &trans
- &trans  &trans  &trans  &trans      &trans      &trans          &trans   &kp END        &trans  &kp PAGE_DOWN  &trans  &trans
-                         &trans      &trans      &trans          &trans    &trans        &trans
+ &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS           &kp EXCL          &trans  &kp HOME  &kp UP_ARROW      &kp PG_UP  &trans  &trans
+ &trans  &trans  &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE       &kp QUESTION          &trans  &kp LEFT      &kp DOWN      &kp RIGHT  &trans  &trans
+ &trans  &trans  &trans         &kp LESS_THAN       &kp GREATER_THAN  &kp DOUBLE_QUOTES          &trans   &kp END        &trans  &kp PAGE_DOWN  &trans  &trans
+                                &kp C_AC_UNDO          &kp C_AC_REDO          &kp TILDE          &trans    &trans        &trans
             >;
         };
     };
